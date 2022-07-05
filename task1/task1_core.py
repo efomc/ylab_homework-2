@@ -62,7 +62,7 @@ def get_route_variants(points_list: list) -> list:
 # выбор наикратчайшего пути
 def get_shortest_route(route_variants: list) -> list:
     min_lenth = calc_route_lenth(route_variants[0])  # стартовое значение для длины пути
-    min_route = route_variants  # стартовый путь
+    min_route = route_variants[0]  # стартовый путь
     # перебираем все варианты пока не найдем самый короткий
     for route in route_variants:
         route_lenth = calc_route_lenth(route)
